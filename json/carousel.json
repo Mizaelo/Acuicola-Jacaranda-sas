@@ -1,0 +1,29 @@
+{
+    "carousel": [
+      {
+        "image": "https://www.shutterstock.com/image-illustration/david-street-style-graphic-designtextile-600nw-2265632523.jpg",
+        "alt": "Imagen 1",
+        "text": "Texto de la Imagen 1",
+        "link": "#"
+      },
+      {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnT7uyxae8RxFlQ7q3i7sZZvFng17wy4QV6Q&s",
+        "alt": "Imagen 2",
+        "text": "Texto de la Imagen 2",
+        "link": "#"
+      },
+      {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlP2TJCEgjVL61ZhE6JkZ8E4LlOQnRofLfXg&s",
+        "alt": "Imagen 3",
+        "text": "Texto de la Imagen 3",
+        "link": "#"
+      },
+      {
+        "image": "https://i.blogs.es/07fc5b/el-libro-de-imagenes-3/1366_2000.png",
+        "alt": "Imagen 4",
+        "text": "Texto de la Imagen 4",
+        "link": "#"
+      }
+    ]
+  }
+  
