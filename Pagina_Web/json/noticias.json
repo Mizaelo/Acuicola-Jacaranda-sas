@@ -1,0 +1,41 @@
+{
+    "news": [
+      {
+        "title": "Título de la Noticia 1",
+        "image": "https://imagenes.elpais.com/resizer/v2/HZOI7JMWVJDUPARGRURGRJVTXQ.jpg?auth=8d04d87e575ece6509098d25f864e0cb2ea13a1b3e5d37137a8b2fbe06cdbe98&width=414&height=311&smart=true",
+        "description": "Breve descripción de la noticia 1.",
+        "link": "#"
+      },
+      {
+        "title": "Título de la Noticia 2",
+        "image": "https://imagenes.elpais.com/resizer/v2/AILZ4QA62BEOTCYWLF6OHIAVKM.jpg?auth=4541e4c08e3ffb33af652c4531d7233ecc1715d1deba1362bb5075dd14ad9720&width=1200",
+        "description": "Breve descripción de la noticia 2.",
+        "link": "#"
+      },
+      {
+        "title": "Título de la Noticia 3",
+        "image": "https://s1.elespanol.com/2025/01/24/enclave-ods/historias/918918423_252577036_1706x960.jpg",
+        "description": "Breve descripción de la noticia 3.",
+        "link": "#"
+      },
+      {
+        "title": "Título de la Noticia 1",
+        "image": "https://imagenes.elpais.com/resizer/v2/HZOI7JMWVJDUPARGRURGRJVTXQ.jpg?auth=8d04d87e575ece6509098d25f864e0cb2ea13a1b3e5d37137a8b2fbe06cdbe98&width=414&height=311&smart=true",
+        "description": "Breve descripción de la noticia 1.",
+        "link": "#"
+      },
+      {
+        "title": "Título de la Noticia 2",
+        "image": "https://imagenes.elpais.com/resizer/v2/AILZ4QA62BEOTCYWLF6OHIAVKM.jpg?auth=4541e4c08e3ffb33af652c4531d7233ecc1715d1deba1362bb5075dd14ad9720&width=1200",
+        "description": "Breve descripción de la noticia 2.",
+        "link": "#"
+      },
+      {
+        "title": "Título de la Noticia 3",
+        "image": "https://s1.elespanol.com/2025/01/24/enclave-ods/historias/918918423_252577036_1706x960.jpg",
+        "description": "Breve descripción de la noticia 3.",
+        "link": "#"
+      }
+    ]
+  }
+  

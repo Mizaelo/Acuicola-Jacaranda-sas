@@ -1,0 +1,70 @@
+{
+    "sitio_web": {
+      "titulo": "Bienvenido a Acuícola Jacaranda SAS",
+      "Logo": "../img/logo.png",
+      "navegacion": [
+        {
+          "nombre": "Inicio",
+          "enlace": "#home",
+          "descripcion": "Bienvenido a nuestra página web. Somos una empresa dedicada a la acuicultura."
+        },
+        {
+          "nombre": "Nosotros",
+          "enlace": "#about",
+          "descripcion": "En Acuícola Jacaranda SAS, nos especializamos en la cría y comercialización de productos acuícolas de alta calidad."
+        },
+        {
+          "nombre": "Productos",
+          "enlace": "#productos",
+          "descripcion": "Ofrecemos una variedad de producto relacionados con la acuicultura, incluyendo consultoría y venta de productos."
+        },
+        {
+          "nombre": "Contacto",
+          "enlace": "#contact",
+          "descripcion": "Puedes contactarnos a través de nuestro correo electrónico: info@acuicolajacaranda.com"
+        }
+      ],
+      "redes_sociales": [
+        {
+          "nombre": "Facebook",
+          "enlace": "https://www.facebook.com/acuicolajacaranda",
+          "icono": "fab fa-facebook"
+        },
+        {
+          "nombre": "Instagram",
+          "enlace": "https://www.instagram.com/acuicolajacaranda",
+          "icono": "fab fa-instagram"
+        },
+        {
+          "nombre": "x",
+          "enlace": "https://www.twitter.com/acuicolajacaranda",
+          "icono": "fab fa-x-twitter"
+        },
+        {
+          "nombre": "Youtube",
+          "enlace": "https://www.youtube.com/acuicolajacaranda",
+          "icono": "fab fa-youtube"
+        },
+        {
+          "nombre": "WhatsApp",
+          "enlace": "https://wa.me/573123456789",
+          "icono": "fab fa-whatsapp"
+        }
+      ],
+      "Username": [
+        {
+          "nombre": "Registrate",
+          "href": "https://www.acuicolajacaranda.com/registro",
+           "class": "btn-register"
+        },
+        {
+          "nombre": "Iniciar Sesión",
+          "href": "https://www.acuicolajacaranda.com/login",
+          "class": "btn-login"
+        }
+
+      ]
+
+    }
+  }
+  
