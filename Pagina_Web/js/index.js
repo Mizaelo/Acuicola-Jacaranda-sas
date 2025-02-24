@@ -111,9 +111,83 @@ fetch('../json/noticias.json')
     }
 //setInterval(nextNews, 5000);
 
+let data = {};
+let paginaActual = 1;
+const productosPorPagina = 3;
+
+async function cargarDatos() {
+    try {
+        const response = await fetch('../json/productos.json');
+        data = await response.json();
+        cargarCategorias();
+        mostrarProductos();
+    } catch (error) {
+        console.error('Error cargando los datos:', error);
+    }
+}
+
+function cargarCategorias() {
+    const select = document.getElementById("categoria");
+    select.innerHTML = data.categorias.map(cat => `<option value="${cat.id}">${cat.nombre}</option>`).join("");
+}
+
+function mostrarProductos() {
+    const contenedor = document.getElementById("productos");
+    const categoriaFiltro = document.getElementById("categoria").value;
+    let productosFiltrados = categoriaFiltro ? data.productos.filter(p => p.categoria === categoriaFiltro) : data.productos;
+    const inicio = (paginaActual - 1) * productosPorPagina;
+    const fin = inicio + productosPorPagina;
+    contenedor.innerHTML = productosFiltrados.slice(inicio, fin).map(p => `
+        <div class='producto'>
+            <img src="${p.imagen}" alt="${p.nombre}">
+            <h3>${p.nombre}</h3>
+             <button onclick="verDetalles('${p.id}')">Ver más detalles</button>
+        </div>`).join("");
+    actualizarPaginacion(productosFiltrados.length);
+}
+
+function actualizarPaginacion(totalProductos) {
+    const totalPaginas = Math.ceil(totalProductos / productosPorPagina);
+    const paginacion = document.getElementById("paginacion");
+    paginacion.innerHTML = "";
+    for (let i = 1; i <= totalPaginas; i++) {
+        paginacion.innerHTML += `<button onclick='cambiarPagina(${i})'>${i}</button>`;
+    }
+}
+
+function verDetalles(id) {
+    window.location.href = `productos.html?id=${id}`;
+}
+
+
+function cambiarPagina(nuevaPagina) {
+    paginaActual = nuevaPagina;
+    mostrarProductos();
+}
+
+document.getElementById("categoria").addEventListener("change", () => {
+    paginaActual = 1;
+    mostrarProductos();
+});
+
+cargarDatos();
 
 
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const ubicacionSeccion = document.getElementById("ubicacion");
 
+    function checkScroll() {
+        const rect = ubicacionSeccion.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (rect.top < windowHeight - 100) {
+            ubicacionSeccion.classList.add("visible");
+        }
+    }
+
+    window.addEventListener("scroll", checkScroll);
+    checkScroll(); // Verificar al cargar la página
+});

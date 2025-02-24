@@ -1,0 +1,16 @@
+{
+    "categorias": [
+        { "id": "", "nombre": "Todos" },
+        { "id": "roja", "nombre": "Tilapia Roja" },
+        { "id": "negra", "nombre": "Tilapia Negra" },
+        { "id": "hibrida", "nombre": "Tilapia Híbrida" }
+    ],
+    "productos": [
+        { "id": 1, "nombre": "Tilapia Roja", "categoria": "roja", "imagen": "https://mandolina.co/wp-content/uploads/2024/06/Tilapia-a-la-Parrilla-con-Salsa-de-Mango.jpg" },
+        { "id": 2, "nombre": "Tilapia Negra", "categoria": "negra", "imagen": "https://mandolina.co/wp-content/uploads/2024/06/Tilapia-a-la-Parrilla-con-Salsa-de-Mango.jpg" },
+        { "id": 3, "nombre": "Tilapia Híbrida", "categoria": "hibrida", "imagen": "https://mandolina.co/wp-content/uploads/2024/06/Tilapia-a-la-Parrilla-con-Salsa-de-Mango.jpg" },
+        { "id": 4, "nombre": "Tilapia Roja Premium", "categoria": "roja", "imagen": "https://mandolina.co/wp-content/uploads/2024/06/Tilapia-a-la-Parrilla-con-Salsa-de-Mango.jpg" },
+        { "id": 5, "nombre": "Tilapia Negra Grande", "categoria": "negra", "imagen": "https://mandolina.co/wp-content/uploads/2024/06/Tilapia-a-la-Parrilla-con-Salsa-de-Mango.jpg" },
+        { "id": 6, "nombre": "Tilapia Híbrida de Exportación", "categoria": "hibrida", "imagen": "https://mandolina.co/wp-content/uploads/2024/06/Tilapia-a-la-Parrilla-con-Salsa-de-Mango.jpg" }
+    ]
+}
