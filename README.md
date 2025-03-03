@@ -1,2 +1,2 @@
 # Acuicola-Jacaranda-sas
-Empresa dedicada a la creacion de pescado y venta del mismo
+Empresa dedicada a la prodcuccion de pescado y venta del mismo
