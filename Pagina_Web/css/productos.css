@@ -1,0 +1,333 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Estilos de la barra superior */
+.barra-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Estilos de los filto */
+.filtros-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#toggle-filtros {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.filtros-container {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    z-index: 10;
+    display: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.filtros-container.mostrar {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.filtros-container h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.categoria-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.categoria-checkbox input {
+    cursor: pointer;
+}
+
+/* Estilos de los carrito */
+.carrito-container {
+    text-align: right;
+    margin-bottom: 20px;
+}
+/* 🔹 Botón del carrito */
+.carrito-btn {
+    background: #3498db;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    border: none;
+}
+
+/* 🔹 Overlay para oscurecer el fondo cuando el carrito está abierto */
+.carrito-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 9;
+}
+
+/* 🔹 Panel del carrito */
+.carrito-panel {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 350px;
+    height: 100%;
+    background: white;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    border-radius: 10px 0 0 10px;
+}
+
+.carrito-panel.mostrar {
+    transform: translateX(0);
+}
+
+.carrito-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #3498db;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px 0 0 0;
+}
+
+.carrito-header button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.carrito-lista {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 15px;
+    list-style: none;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.carrito-lista li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.carrito-lista li:hover {
+    transform: scale(1.02);
+}
+.carrito-footer {
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 0 0 10px 10px;
+}
+
+.carrito-footer p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.comprar-btn, .vaciar-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.comprar-btn {
+    background: #27ae60;
+    color: white;
+}
+
+.vaciar-btn {
+    background: #e74c3c;
+    color: white;
+}
+/* Botones generales */
+.removeProduct, .addProduct, .deleterProduct {
+    border: none;
+    cursor: pointer;
+    font-size: 8px;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Botón para disminuir cantidad (gris pastel) */
+.removeProduct {
+    background: #d3d3d3; /* Gris pastel suave */
+    color: #333;
+}
+
+.removeProduct:hover {
+    background: #bcbcbc;
+    transform: scale(1.1);
+}
+
+/* Botón para aumentar cantidad (azul pastel) */
+.addProduct {
+    background: #a0c4ff; /* Azul pastel */
+    color: #333;
+}
+
+.addProduct:hover {
+    background: #87b6ff;
+    transform: scale(1.1);
+}
+
+/* Botón para eliminar el producto del carrito (rojo pastel) */
+.deleterProduct {
+    background: #ffadad; /* Rojo pastel */
+    color: #333;
+}
+
+.deleterProduct:hover {
+    background: #ff7f7f;
+    transform: scale(1.1);
+}
+
+
+
+/* Estilos de los productos */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.producto {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.producto h3 {
+    margin: 10px 0;
+}
+.producto p {
+    margin: 5px 0;
+}
+.producto .precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: #27ae60;
+}
+.producto .precio-original {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #e74c3c;
+}
+.producto .cantidad {
+    font-size: 14px;
+    color: #555;
+}
+.producto button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+   
+    font-size: 14px;
+}
+
+.disponible {
+    background: #27ae60;
+    color: white;
+    cursor: pointer;
+}
+.agotado {
+    background: #e74c3c;
+    color: white;
+    cursor: not-allowed;
+}
+.proximamente {
+    background: #f39c12;
+    color: white;
+    cursor: not-allowed;
+}
+.oferta {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}

@@ -27,10 +27,12 @@ a {
 nav {
     background: #050C9C;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: sticky;
+  /*  position: sticky;
     top: 0;
     z-index: 1000;
-}
+
+    */
+    }
 
 nav ul {
     list-style: none;

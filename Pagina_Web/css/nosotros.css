@@ -1,0 +1,187 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+    color: #333;
+}
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.section {
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 12px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+.section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.icon {
+    font-size: 28px;
+}
+.section img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.section img:hover {
+    transform: scale(1.05);
+}
+.video-container {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.video-container iframe {
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+.table th {
+    background: #3498db;
+    color: white;
+    font-weight: bold;
+}
+.container ul {
+    list-style: none;
+    padding: 0;
+}
+.container ul li {
+    background: #e3f2fd;
+    margin: 5px 0;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container ul li::before {
+    content: '✔️';
+    color: #3498db;
+    font-size: 18px;
+}  
+/* Estilos generales  videos*/
+#video-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: #ffffff; /* Fondo blanco */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1100px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+#video-section h3 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #444;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    border-bottom: 3px solid #545454;
+}
+
+/* Contenedor de videos con 3 columnas */
+.videos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+}
+
+/* Tarjetas de video con bordes suaves */
+.video-column {
+    background: #f9f9f9; /* Gris claro */
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Efecto de elevación suave */
+.video-column:hover {
+    transform: translateY(-5px);
+}
+
+/* Videos responsivos */
+.video-card iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Títulos y textos */
+.video-card h4 {
+    font-size: 16px;
+    color: #222;
+    margin: 12px 0;
+}
+
+.video-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Diseño responsivo: 2 columnas en tablets y 1 en móviles */
+@media (max-width: 900px) {
+    .videos-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    }
+}
+
+@media (max-width: 600px) {
+    .videos-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 columna */
+    }
+}
