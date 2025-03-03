@@ -1,10 +1,3 @@
-
-function toggleMenu() {
-    const menu = document.querySelector('nav ul');
-    menu.classList.toggle('active');
-    document.getElementById("Idmenu-icon").textContent = menu.classList.contains('active') ? 'X' : '☰';
-}
-
 let index = 0;
 let slides = [];
 const carousel = document.querySelector('.carousel');

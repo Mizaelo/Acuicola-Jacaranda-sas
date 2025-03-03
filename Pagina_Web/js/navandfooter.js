@@ -1,3 +1,9 @@
+function toggleMenu() {
+    const menu = document.querySelector('nav ul');
+    menu.classList.toggle('active');
+    document.getElementById("Idmenu-icon").textContent = menu.classList.contains('active') ? 'X' : '☰';
+}
+
 async function fetchData(url) {
     try {
         const response = await fetch(url);
@@ -13,7 +19,12 @@ async function fetchData(url) {
 function createHeader(data) {
     const header = document.createElement("header");
     const h1 = document.createElement("h1");
+    const link = document.createElement('link');
+    link.rel = 'icon';
+    link.type = 'image/x-icon';
+    link.href = data.sitio_web.Logo;
     h1.textContent = data.sitio_web.titulo;
+    document.head.appendChild(link);
     header.appendChild(h1);
 
     const authDiv = document.createElement("div");
