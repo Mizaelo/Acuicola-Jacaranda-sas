@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acuícola jacaranda sas | Productos</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/productos.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Productos</h1>
+        <div class="barra-superior">
+            <div class="filtros-wrapper">
+                <button id="toggle-filtros">🔍 Filtrar</button>
+                <div class="filtros-container oculto" id="filtros-container">
+                    <h3>Filtrar por categoría</h3>
+                    <div id="categoria-checkboxes"></div>
+                </div>
+            </div>
+            <div class="carrito-container">
+                <div class="carrito-btn" onclick="toggleCarrito()">
+                    🛒 Carrito (<span id="contador-carrito">0</span>)
+                </div>
+            </div>
+            
+            <div id="carrito-overlay" class="carrito-overlay" onclick="toggleCarrito()"></div>
+            <div id="carrito-panel" class="carrito-panel">
+                <div class="carrito-header">
+                    <h2>Carrito de Compras</h2>
+                    <button onclick="toggleCarrito()">❌</button>
+                </div>
+                <ul class="carrito-lista" id="carrito-lista"></ul>
+                <div class="carrito-footer">
+                    <p>Total: <span id="total-precio">COP 0</span></p>
+                    <button class="comprar-btn">Finalizar Compra</button>
+                    <button onclick="vaciarCarrito()" class="vaciar-btn">Vaciar Carrito</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="productos" id="productos"></div>
+    </div>
+
+
+    <script src="../js/navandfooter.js"></script>
+    <script src="../js/productos.js"></script>
+</body>
+
+</html>
