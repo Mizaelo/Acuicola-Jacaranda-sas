@@ -1,0 +1,312 @@
+{
+"BIOFLOCDoc":[
+    {
+      
+      "proyecto": {
+        "introduccion": "<span class='viñeta_Negrilla'>Para empezar un gran proyecto,</span> <span class='Viñeta_red'>se requiere valentía</span>. <span class='viñeta_Negrilla'><br>Para terminar un gran proyecto,</span> <span class='Viñeta_Blue'>hace falta perseverancia.</span>",
+       
+        "beneficios_sociales": {
+          "Titulo": "Lugares Beneficiarios",
+          "beneficiarios_directos": ["Gualanday"],
+          "beneficiarios_indirectos": ["Coello"],
+          "beneficiarios_secundarios": ["Ibagué", "Espinal", "Flandes", "Guamo", "San Luis", "Valle de San Juan"]
+        },
+        "empleo": {
+          "Titulo": "Tipos de mano de obra",
+          "mano_de_obra_no_calificada": [
+            "Empleados de aseo",
+            "Mandados",
+            "Cargadores",
+            "Jornaleros",
+            "Obreros agrícolas",
+            "Empleadas domésticas",
+            "Vendedores de diarios"
+          ],
+          "empleos_directos": ["Auto empleo", "Empleo remunerado", "Amas de casa cabeza de hogar", "Personas de la tercera edad", "Jóvenes de primer empleo", "Técnicos y tecnólogos SENA"]
+        },
+        "productos": {
+          "Titulo": "Tipo de productos",
+          "presentaciones": {
+            "entero": ["Fresco", "Congelado", "Empacado al vacío"],
+            "filetes": {
+              "con_piel": "Empacado al vacío",
+              "sin_piel": "Empacado al vacío"
+            }
+          },
+          "Embutidos":{
+            "tipos":["Hamburguesa", "Chorizo", "Mortadela", "Jamón", "Cábano", "Salchicha", "Salchichón", "Salami"]
+          },
+          "piel": {
+            "usos": ["Colágeno", "Tratamiento de quemaduras", "Reconstrucción de vagina"]
+          },
+          "industrial": {
+            "usos": ["Marroquinería", "Diseño industrial", "Ácido hialurónico"]
+          },
+          "enlatado": {
+            "tipos": ["Filetitos", "Rayado"],
+            "empaque": "Empacado al vacío"
+          }
+        },
+        "subproductos": {
+          "compost": true,
+          "lombricultura": true
+        },
+        "productos_industriales": {
+          "colageno": ["Tratamiento de quemaduras", "Reconstrucción de vagina"],
+          "industrial": ["Marroquinería", "Diseño industrial", "Ácido hialurónico"],
+          "enlatados": ["Filetitos", "Rayado", "Embutidos", "Hamburguesa", "Chorizo", "Mortadela", "Jamón", "Cábano", "Salchicha", "Salchichón", "Salami"]
+        },
+        "tecnologia": {
+          "img":"../img/Bio/imagen3.png",
+          "sistemas": {
+            "Acuamimicry": "Tecnología acuícola avanzada",
+            "Biofloc": {
+              "descripcion": "Sistema de ciclo cerrado que mejora la calidad del agua, aumenta la densidad del cultivo y elimina la necesidad de recambiar agua.",
+              "ventajas": [
+                "Uso eficiente del suelo y agua",
+                "Control de oxígeno, temperatura, pH y alcalinidad",
+                "Sistema 100% amigable con el medio ambiente",
+                "Minimiza la transmisión de enfermedades",
+                "Reducción del desperdicio de alimento"
+              ]
+            }
+          }
+        },
+        "sistema_productivo": {
+          "Titulo": "Sistema Productivo",
+          "img":"../img/Bio/imagen4.png",
+          "modulos": [
+            {
+              "tipo": "Tanque circular",
+              "dimensiones": "4 m de diámetro, 1.2 m de altura",
+              "capacidad": "15.08 m³",
+              "uso": "Alevinos"
+            },
+            {
+              "tipo": "Tanque circular",
+              "dimensiones": "8 m de diámetro, 1.2 m de altura",
+              "capacidad": "60.32 m³",
+              "uso": "Juveniles"
+            },
+            {
+              "tipo": "Tanque circular",
+              "dimensiones": "12 m de diámetro, 1.2 m de altura",
+              "capacidad": "135.72 m³",
+              "uso": "Engorde"
+            }
+          ],
+          "siembra_engorde": {
+            "produccion": "5 toneladas de tilapia roja por cosecha",
+            "frecuencia": "8 cosechas al año"
+          }
+        },
+        "automatizacion": {
+          "Titulo":"Automatización de los Sistemas de Aireación",
+          "descripcion": "Automatización de los sistemas de aireación y monitoreo de los estanques",
+          "componentes": {
+            "blowers": {
+              "cantidad": 2,
+              "potencia": "900 W c/u",
+              "uso": "Brindan aireación permanente y movimiento homogéneo del agua a través de parrillas polidifusoras"
+            },
+            "manguera_polidifusora": {
+              "longitud": "384 m",
+              "tipo": "Aerotube",
+              "uso": "Elaboración de parrillas sumergidas en cada estanque"
+            },
+            "aireadores_splash_12m": {
+              "cantidad": 2,
+              "potencia": "900 W c/u",
+              "uso": "Para estanques de 12 m"
+            },
+            "aireadores_splash_6y8m": {
+              "cantidad": 4,
+              "potencia": "200 W c/u",
+              "uso": "Para estanques de 6 m y 8 m"
+            },
+            "sistema_alarma": {
+              "descripcion": "Alarma vinculada a cada aireador blower",
+              "alerta": "falla en la red eléctrica, motor o ruptura de tubería"
+            }
+          }
+        },
+        "formacion_extensionistas": {
+          "mensaje": "<span class='Viñeta_red'>Sembrar</span> seguridad alimentaria, es <span class='Viñeta_red'>cosechar</span> paz.",
+          "img": "../img/Bio/imagen1.png",
+            "temas": [
+              "técnicas acuícolas",
+              "selección de sitio",
+              "construcción de tanques",
+              "siembra de peces",
+              "engorde",
+              "manejo",
+              "cosecha"
+            ],
+            "objetivo": "Mejoramiento del potencial productivo acuícola",
+            "alcance": {
+              "local": true,
+              "regional": true,
+              "nacional": true
+            }
+        },
+        "infraestructura": {
+          "inversion": true,
+          "sistemas": {
+            "tipo": "Súper intensivos",
+            "densidad": {
+              "minimo": 60,
+              "maximo": 70
+            },
+            "requerimientos": [
+              "Monitoreo constante",
+              "Control de condiciones óptimas",
+              "Aplicación de tecnología adecuada"
+            ]
+          }
+        },
+        
+          "factores_diferenciadores_innovacion": {
+            "img":"../img/Bio/imagen2.png",
+            "aspectos_clave": {
+              "tecnologia": "TECNOLOGÍA EN BIOFLOC",
+              "eficiencia": "alta eficiencia en producción"
+            },
+            "etapas_produccion": [
+              "cría",
+              "levante",
+              "engorde"
+            ],
+            "especie": "tilapia roja",
+            "tanques": {
+              "tipo": "circulares",
+              "material": "Concreto con alma de Poliestireno Expandido (EPS)",
+              "aireacion": {
+                "constante": true,
+                "metodo": "blowers"
+              }
+            },
+            "condiciones_agua": {
+              "recambio": "sin recambio",
+              "movimiento": "con movimiento",
+              "aireacion": "constante"
+            },
+            "procesos_involucrados": {
+              "biologicos": true,
+              "bioquimicos": true,
+              "fisicos": true
+            },
+            "biofloc": {
+              "descripcion": "El Bioflóc o Flóculo Vivo es un ecosistema complejo en equilibrio, donde interactúan microorganismos como bacterias, fitoplancton, zooplancton, entre otros.",
+              "ciclos_realizados": [
+                "biológicos",
+                "fisicoquímicos"
+              ],
+              "funcion": "Ciclar los residuos de alimentación y desechos de los peces, controlando la calidad del agua y las condiciones de los tanques."
+            },
+            "ventajas": {
+              "mortalidad": "inferior al 1%",
+              "uso_eficiente_suelo": "permite aumentar más de 30 veces la densidad de siembra tradicional",
+              "uso_eficiente_agua": "recambio de agua inexistente",
+              "bioseguridad": "mejora la bioseguridad al eliminar el cambio de agua",
+              "amigable_medio_ambiente": true,
+              "prevencion_enfermedades": "previene la introducción de enfermedades por competencia de poblaciones bacterianas",
+              "control_calidad_agua": "controla la calidad del agua garantizando condiciones óptimas para el desarrollo y crecimiento de los peces",
+              "control_variables": [
+                "oxígeno",
+                "temperatura",
+                "pH",
+                "alcalinidad"
+              ],
+              "minimiza_riesgo_enfermedades": true,
+              "sin_desperdicio_alimento": true,
+              "proteccion_depredadores": "Tanques elevados del suelo y cubiertos con mallas",
+              "crecimiento_acelerado": "Condiciones óptimas para el crecimiento rápido de los peces",
+              "fuente_alimento": {
+                "descripcion": "Los flóculos son una fuente de nutrición con alto contenido proteico, mejorando la conversión alimenticia.",
+                "beneficio": "Se requiere menos alimento concentrado para producir más carne"
+              },
+              "operacion_continua": true,
+              "localizacion_proyectos": "Puede desarrollarse en cualquier lugar, sin depender de caudal de agua",
+              "personal_calificado": "Para atender cualquier eventualidad"
+            }
+        },
+      "Biofloc": {
+    "description": "El Biofloc es un novedoso sistema que no solo mejora la calidad del agua, sino que logra aumentar la densidad del cultivo. Este sistema consiste en el desarrollo de flóculos microbianos formados a partir de una alta relación mediante el aporte controlado de carbono y nitrógeno en el agua, con poco o nulo recambio y alta oxigenación.",
+    "componentes": {
+      "carbono": [
+        "melaza",
+        "pulido de arroz"
+      ],
+      "nitrogeno": "proveniente del alimento comercial"
+    },
+    "proceso": "Este sistema permite el crecimiento de una comunidad microbiana, sobre todo de bacterias heterótrofas, que metabolizan los carbohidratos y toman nitrógeno inorgánico (principalmente NH<h6 class='decimal-quimica'>4</h6> amonio), reduciendo sus niveles y mejorando la calidad del agua.",
+    "beneficios": "Este sistema se basa en aprovechar los residuos de los alimentos, materia orgánica y compuestos inorgánicos tóxicos, que de otro modo deterioran la calidad del agua y el aprovechamiento del alimento natural, a través de microorganismos presentes en medios acuáticos.",
+    "comunidades_microbianas": {
+      "quimio_foto_autotrofos": true,
+      "heterotrofos": true
+    },
+    "aireacion": {
+      "tipo": "constante",
+      "metodo": "mangueras polidifusoras conectadas a un blower",
+      "beneficio": "mantener el nivel de oxígeno disuelto adecuado en los tanques"
+    },
+    "sistemas_productivos": {
+      "tipo": "intensivos",
+      "proceso": "Requieren aireación constante",
+      "descripcion": "La producción acuícola mundial cuenta con sistemas sencillos de estanques pequeños de agua dulce, utilizados para la cría de peces herbívoros y filtradores."
+    },
+    "estanques": {
+      "tipos": [
+        "Intesivos",
+        "superintensivos"
+      ],
+      "caracteristicas": {
+        "densidad_siembra": "Alta",
+        "inversion": "Requiere grandes inversiones"
+      },
+      "areas": [
+        {
+          "dimension": "Desde pocos metros cuadrados hasta varias hectáreas",
+          "peces_por_metro_cuadrado": "Entre 10 y 60"
+        }
+      ]
+    }
+  },
+  "sistema_solar": {
+    "Titulo": "Sistema Solar Independiente",
+    "img":"../img/Bio/imagen5.png",
+    "descripcion": "Un sistema solar independiente para trabajo 24/7",
+    "componentes": {
+      "paneles": 44,
+      "baterias": 36,
+      "modulos_transferencia": 2,
+      "controlador": 1
+    },
+    "recomendaciones_transporte": {
+      "descripcion": "Es preferible colocar el pescado derecho de una manera de cola a cola en las cajas de transporte",
+      "posicion": "Derecha"
+    }
+  },
+        "Titulo": "Biofloc",
+        "Videos":[
+          {
+            "titulo": "3   MOSTRAR  Tilapia roja Dimensiones Biometrias en Agua Dulce, Granja Jahuara en Mochicahui, Sinalo",
+            "descripcion": "Es una muestra de tilapia roja suscribate.",
+            "url": "https://www.youtube.com/embed/JwJGYSFB3-s"
+        },
+        {
+            "titulo": "Automatización del Sistema",
+            "descripcion": "Descubre cómo funciona la automatización en el proceso de cultivo.",
+            "url": "https://www.youtube.com/embed/A5P65RVBxek"
+        },
+        {
+          "titulo": "PRODUCCION DE TILAPIA ROJA Y TILAPIA GIFT EN TANQUES CIRCULARES,   Luis Fernando Castillo",
+          "descripcion": "Producimos tilapia rojas.",
+          "url": "https://www.youtube.com/embed/5TxI81AobSk"
+        }
+
+        ]
+      }
+    }
+  ]
+}

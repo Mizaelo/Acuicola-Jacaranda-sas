@@ -6,11 +6,84 @@
         { "id": "hibrida", "nombre": "Tilapia Híbrida" }
     ],
     "productos": [
-        { "id": 1, "nombre": "Tilapia Roja", "categoria": "roja", "imagen": "https://mandolina.co/wp-content/uploads/2024/06/Tilapia-a-la-Parrilla-con-Salsa-de-Mango.jpg" },
-        { "id": 2, "nombre": "Tilapia Negra", "categoria": "negra", "imagen": "https://mandolina.co/wp-content/uploads/2024/06/Tilapia-a-la-Parrilla-con-Salsa-de-Mango.jpg" },
-        { "id": 3, "nombre": "Tilapia Híbrida", "categoria": "hibrida", "imagen": "https://mandolina.co/wp-content/uploads/2024/06/Tilapia-a-la-Parrilla-con-Salsa-de-Mango.jpg" },
-        { "id": 4, "nombre": "Tilapia Roja Premium", "categoria": "roja", "imagen": "https://mandolina.co/wp-content/uploads/2024/06/Tilapia-a-la-Parrilla-con-Salsa-de-Mango.jpg" },
-        { "id": 5, "nombre": "Tilapia Negra Grande", "categoria": "negra", "imagen": "https://mandolina.co/wp-content/uploads/2024/06/Tilapia-a-la-Parrilla-con-Salsa-de-Mango.jpg" },
-        { "id": 6, "nombre": "Tilapia Híbrida de Exportación", "categoria": "hibrida", "imagen": "https://mandolina.co/wp-content/uploads/2024/06/Tilapia-a-la-Parrilla-con-Salsa-de-Mango.jpg" }
+        {
+            "id": 1,
+            "nombre": "Tilapia Roja",
+            "categoria": "roja",
+            "descripcion": "Tilapia roja de alta calidad.",
+            "precio": 25000, 
+            "moneda": "COP",
+            "cantidad": 100,
+            "oferta_activa": true,
+            "descuento": 20,
+            "fecha_lanzamiento": "2024-01-15",
+            "imagen": "https://mandolina.co/wp-content/uploads/2024/06/Tilapia-a-la-Parrilla-con-Salsa-de-Mango.jpg"
+        },
+        {
+            "id": 2,
+            "nombre": "Tilapia Negra",
+            "categoria": "negra",
+            "descripcion": "Tilapia negra fresca y saludable.",
+            "precio": 25000, 
+            "moneda": "COP",
+            "cantidad": 50,
+            "oferta_activa": false,
+            "descuento": 0,
+            "fecha_lanzamiento": "2026-11-20",
+            "imagen": "https://mandolina.co/wp-content/uploads/2024/06/Tilapia-a-la-Parrilla-con-Salsa-de-Mango.jpg"
+        },
+        {
+            "id": 3,
+            "nombre": "Tilapia Híbrida",
+            "categoria": "hibrida",
+            "descripcion": "Tilapia híbrida seleccionada para mejor sabor.",
+            "precio": 25000, 
+            "moneda": "COP",
+            "cantidad": 50,
+            "oferta_activa": true,
+            "descuento": 60,
+            "fecha_lanzamiento": "2024-02-10",
+            "imagen": "https://mandolina.co/wp-content/uploads/2024/06/Tilapia-a-la-Parrilla-con-Salsa-de-Mango.jpg"
+        },
+        {
+            "id": 4,
+            "nombre": "Tilapia Roja",
+            "categoria": "roja",
+            "descripcion": "Tilapia roja de alta calidad.",
+            "precio": 25000, 
+            "moneda": "COP",
+            "cantidad": 100,
+            "oferta_activa": false,
+            "descuento": 0,
+            "fecha_lanzamiento": "2024-01-15",
+            "imagen": "https://mandolina.co/wp-content/uploads/2024/06/Tilapia-a-la-Parrilla-con-Salsa-de-Mango.jpg"
+        },
+        {
+            "id": 5,
+            "nombre": "Tilapia Negra",
+            "categoria": "negra",
+            "descripcion": "Tilapia negra fresca y saludable.",
+            "precio": 25000, 
+            "moneda": "COP",
+            "cantidad": 50,
+            "oferta_activa": false,
+            "descuento": 0,
+            "fecha_lanzamiento": "2026-11-20",
+            "imagen": "https://mandolina.co/wp-content/uploads/2024/06/Tilapia-a-la-Parrilla-con-Salsa-de-Mango.jpg"
+        },
+        {
+            "id": 6,
+            "nombre": "Tilapia Híbrida",
+            "categoria": "hibrida",
+            "descripcion": "Tilapia híbrida seleccionada para mejor sabor.",
+            "precio": 25000, 
+            "moneda": "COP",
+            "cantidad": 0,
+            "oferta_activa": true,
+            "descuento": 60,
+            "fecha_lanzamiento": "2024-02-10",
+            "imagen": "https://mandolina.co/wp-content/uploads/2024/06/Tilapia-a-la-Parrilla-con-Salsa-de-Mango.jpg"
+        }
     ]
 }
+

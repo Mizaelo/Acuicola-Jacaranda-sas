@@ -1,26 +1,31 @@
 {
     "sitio_web": {
       "titulo": "Bienvenido a Acuícola Jacaranda SAS",
-      "Logo": "../img/logo.png",
+      "Logo": "../img/logo1.jpeg",
       "navegacion": [
         {
           "nombre": "Inicio",
-          "enlace": "#home",
+          "enlace": "index.html",
           "descripcion": "Bienvenido a nuestra página web. Somos una empresa dedicada a la acuicultura."
         },
         {
           "nombre": "Nosotros",
-          "enlace": "#about",
+          "enlace": "Sobre-nosotros.html",
           "descripcion": "En Acuícola Jacaranda SAS, nos especializamos en la cría y comercialización de productos acuícolas de alta calidad."
         },
         {
           "nombre": "Productos",
-          "enlace": "#productos",
+          "enlace": "productos.html",
           "descripcion": "Ofrecemos una variedad de producto relacionados con la acuicultura, incluyendo consultoría y venta de productos."
         },
         {
+          "nombre": "Noticias",
+          "enlace": "noticias.html",
+          "descripcion": "Puedes contactarnos a través de nuestro correo electrónico: info@acuicolajacaranda.com"
+        },
+        {
           "nombre": "Contacto",
-          "enlace": "#contact",
+          "enlace": "contactos.html",
           "descripcion": "Puedes contactarnos a través de nuestro correo electrónico: info@acuicolajacaranda.com"
         }
       ],
